@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="jpconstructionlpp.com"
+4    android:versionCode="6"
+5    android:versionName="6.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:6:5-81
+11-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:6:22-78
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:7:5-67
+12-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:9:5-79
+14-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:10:5-80
+15-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:11:5-81
+16-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:11:22-78
+17
+18    <uses-feature android:name="android.hardware.location.gps" />
+18-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:12:5-66
+18-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:12:19-63
+19
+20    <application
+20-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:18:5-55:19
+21        android:name="jpconstructionlpp.com.model.RajApplication"
+21-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:19:9-45
+22        android:allowBackup="true"
+22-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:20:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@drawable/ic_launcher"
+25-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:21:9-45
+26        android:label="@string/app_name"
+26-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:22:9-41
+27        android:roundIcon="@drawable/ic_launcher_round"
+27-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:23:9-56
+28        android:supportsRtl="true"
+28-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:24:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme"
+30-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:25:9-40
+31        android:usesCleartextTraffic="true" >
+31-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:26:9-44
+32        <activity
+32-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:28:9-29:51
+33            android:name="jpconstructionlpp.com.Login"
+33-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:28:19-40
+34            android:screenOrientation="portrait" />
+34-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:29:13-49
+35        <activity
+35-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:31:9-34:51
+36            android:name="jpconstructionlpp.com.customer.Customer"
+36-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:32:13-46
+37            android:label="@string/title_activity_customer"
+37-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:33:13-60
+38            android:screenOrientation="portrait" />
+38-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:34:13-49
+39        <activity
+39-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:36:9-39:52
+40            android:name="jpconstructionlpp.com.supervisor.Supervisor"
+40-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:37:13-50
+41            android:label="@string/title_activity_sale"
+41-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:38:13-56
+42            android:screenOrientation="portrait" />
+42-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:39:13-49
+43        <activity
+43-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:41:9-44:51
+44            android:name="jpconstructionlpp.com.Sales"
+44-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:42:13-34
+45            android:label="@string/title_activity_shops"
+45-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:43:13-57
+46            android:screenOrientation="portrait" />
+46-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:44:13-49
+47        <activity
+47-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:46:9-54:20
+48            android:name="jpconstructionlpp.com.Splashscreen"
+48-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:47:13-41
+49            android:screenOrientation="portrait" >
+49-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:48:13-49
+50            <intent-filter>
+50-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:49:13-53:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:50:17-69
+51-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:50:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:52:17-77
+53-->D:\JPConstructionLPP\app\src\main\AndroidManifest.xml:52:27-74
+54            </intent-filter>
+55        </activity>
+56
+57        <provider
+57-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+58            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+59            android:authorities="jpconstructionlpp.com.lifecycle-process"
+59-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+60            android:exported="false"
+60-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+61            android:multiprocess="true" />
+61-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c75b512c68f7bb7a7c5a931aae563be5\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+62    </application>
+63
+64</manifest>

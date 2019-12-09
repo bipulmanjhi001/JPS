@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:text="ACCOUNT"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/waveLoading"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/text"
+        android:layout_height="wrap_content">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        app:wlv_borderColor="@color/colorAccent"
+        app:wlv_borderWidth="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleCenterSize="24sp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="#E01313"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:layout_below="@+id/waveLoadingView"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="15sp"
+            android:background="#E01313"
+            android:layout_height="15sp"/>
+
+        <TextView
+            android:id="@+id/e_amt"
+            android:layout_width="wrap_content"
+            android:text="Total Expenses"
+            android:textStyle="bold"
+            android:layout_marginLeft="10sp"
+            android:textColor="#E01313"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="15sp"
+            android:layout_marginLeft="10sp"
+            android:background="#10CE18"
+            android:layout_height="15sp"/>
+
+        <TextView
+            android:id="@+id/t_amt"
+            android:layout_width="wrap_content"
+            android:text="Total Amount"
+            android:textStyle="bold"
+            android:layout_marginLeft="10sp"
+            android:textColor="#10CE18"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/di_name"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="The company is now a pioneer in the real estate development in the State of Jharkhand."
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

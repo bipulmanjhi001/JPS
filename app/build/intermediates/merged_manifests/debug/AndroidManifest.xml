@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jpconstructionlpp.com"
+    android:versionCode="6"
+    android:versionName="6.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name="jpconstructionlpp.com.model.RajApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="jpconstructionlpp.com.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="jpconstructionlpp.com.customer.Customer"
+            android:label="@string/title_activity_customer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="jpconstructionlpp.com.supervisor.Supervisor"
+            android:label="@string/title_activity_sale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="jpconstructionlpp.com.Sales"
+            android:label="@string/title_activity_shops"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="jpconstructionlpp.com.Splashscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="jpconstructionlpp.com.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
